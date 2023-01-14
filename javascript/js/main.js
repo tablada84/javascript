@@ -1,9 +1,8 @@
-function Persona(nombreApellido, direccion, telefono, email) {
+/* function Persona(nombreApellido, direccion, telefono, email) {
   this.nombreApellido = nombreApellido;
   this.direccion = direccion;
   this.telefono = telefono;
   this.email = email;
-
   this.saludar = () => {
     console.log("Bienvenido/a " + this.nombreApellido);
   };
@@ -170,93 +169,4 @@ filtrado.forEach((prod) => {
   sumarFilt += prod.precio; // opcional
 });
 
-alert(sumarFilt); //opcional
-
-console.log(filtrado);
-
-//eventos on click
-
-/* function clickTitulo() {
-  console.log("el usuario hizo click en el titulo");
-}
-const titulo2 = document.getElementById("titulos");
-titulo2.addEventListener = (click, clickTitulo);
-
-const form = document.querySelector("#formulario");
-
-const enviarFormulario = (Event) => {
-  Event.preventDefaul();
-  alert(Event, target, nombre, email, telefono);
-};
-
-form.addEventListener("submit", enviarFormulario);
-
-btnregistrame.addEventListener("click", () => {
-  let nombre = document.getElementById("inputNombre"),
-    value;
-  registrame(nombre);
-});
-
-const formulario = document.getElementById("form");
-
-formulario.addEventlistener("sumit", function (e) {
-  e.preventDefault();
-  let nombre = document.getElementById("nombre-form").value;
-  alert(nombre);
-}); */
-
-/* verCarrito.addEventListener("click", () => {
-  modalContainer.innerHTML = "";
-  modalContainer.style.display = "flex";
-  const modalHeader = document.createElement("div");
-  modalHeader.className = "modal-header";
-  modalHeader.innerHTML = `
-  <h1 class="modal-header-title">carrito.</h1>
-`;
-  modalContainer.append(modalHeader);
-  const modalbutton = document.createElement("h1");
-  modalbutton.innerText = "x";
-  modalbutton.className = "modal-header-button";
-
-  modalbutton.addEventListener("click", () => {
-    modalContainer.style.display = "none";
-  });
-
-  carrito.forEach((product) => {
-    let carritoContent = document.createElement("div");
-    carritoContent.className = "modal-content";
-    carritoContent.innerHTML = `
-  <h3>${product.nombre}</h3>
-  <p>${product.precio} $</p>
-  `;
-    modalContainer.append(carritoContent);
-  });
-
-  const total = carrito.reduce((acc, el) => acc + el.precio, 0);
-
-  const totalBuying = document.createElement("div");
-  totalBuying.className = "total-content";
-  totalBuying.innerHTML = `total a pagar: ${total}`;
-});*/
-/* let preveiwPoductos = document.querySelector(".productos-previwe");
-let preveiwbox = preveiwPoductos.querySelectorAll(".preview");
-
-document.querySelectorAll(".productos-row .productos").forEach((productos) => {
-  produc.onclick = () => {
-    preveiwPoductos.getElementsByClassName.display = "flex";
-    let name = productos.getAttribute("data-name");
-    preveiwbox.forEach((preview) => {
-      let target = productos.getAtribute("date-target");
-      if (name == target) {
-        preview.classList.add("active");
-      }
-    });
-  };
-});
-
-preveiwbox.forEach((close) => {
-  close.querySelector(".fa-xmark").onclick = () => {
-    close.clasicList.remove("active");
-    preveiwPoductos.style.display = none;
-  };
-}); */
+alert(sumarFilt); //opcional */
