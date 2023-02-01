@@ -67,19 +67,22 @@ const productos = [
   { id: 3, nombre: "pasas de uva", precio: 200 },
   { id: 4, nombre: "mixfrutal", precio: 400 },
   { id: 5, nombre: "mani", precio: 200 },
-  { id: 6, nombre: "higos", precio: 600 },
-  { id: 7, nombre: "castana", precio: 450 },
-  { id: 8, nombre: "mixtropical", precio: 550 },
 ];
 
 let carrito = [];
 
+
+
 let seleccion = prompt("hola desea comprar algun productos si o no");
+
+//armado de bucles
 
 while (seleccion != "si" && seleccion != "no") {
   alert("por favor ingrese si o no");
   seleccion = prompt("hola desea comprar algo si o no");
 }
+
+//recorrer el array
 
 if (seleccion == "si") {
   alert("a continuacion nuestra lista de productos");
@@ -144,6 +147,8 @@ while (seleccion != "no") {
     break;
   }
 }
+
+// acumulador
 const total = carrito.reduce((acc, el) => acc + el.precio * el.unidades, 0);
 alert(`el total a pagar por su compra es: ${total}`);
 console.log(`el total a pagar por su compra es: ${total}`);
@@ -170,3 +175,18 @@ filtrado.forEach((prod) => {
 });
 
 alert(sumarFilt); //opcional */
+
+/* Toastify({
+  text: "This is a toast",
+  duration: 3000,
+  destination: "https://github.com/apvarun/toastify-js",
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "left", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+  onClick: function () {}, // Callback after click
+}).showToast(); */
